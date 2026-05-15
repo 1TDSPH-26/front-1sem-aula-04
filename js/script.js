@@ -134,12 +134,78 @@
 // x **= 5;
 // console.log(x);
 
-function soma(a,b){
-    let resultado = a+b;
-    console.log("Resultado da operação");
-    return resultado;
-}
+// function soma(a=0,b=0){
+//     let resultado = a+b;
+//     console.log("Resultado da operação");
+//     return resultado;
+// }
 
-// console.log("Executado no escopo principal!!!")
+// //Recebendo parâmetros através do operador SPREAD:
+// function soma(...args){
+//     let resultado;
+    
+//     for(let x = 0; x < args.length ; x++){
+//         resultado += args[x];
+//     }
 
-soma(2,2);
+//     console.log("Resultado da operação:");
+//     return resultado;
+// }
+
+// // console.log("Executado no escopo principal!!!")
+// soma(2,2,4);
+
+// //Arrow Function
+// const soma = (...args) => {
+//     let resultado = 0;
+    
+//     for(let x = 0; x < args.length ; x++){
+//         resultado += args[x];
+//     }
+
+//     console.log("Resultado da operação:");
+//     return resultado;
+// }
+
+// // console.log("Executado no escopo principal!!!")
+// soma(2,2,4);
+
+// const valida = () => 2 > 1;
+
+// const intervalo = setInterval ( () => {
+// window.location.href = "../index.html"
+// clearInterval(intervalo);
+// }, 5000);
+
+// const botaoEntrar = document.getElementById("btnEntrar")
+// console.log(botaoEntrar.textContent);
+// botaoEntrar.textContent = "OK";
+// botaoEntrar.style.backgroundColor = "yellow";
+
+// const botaoEntrar = document.getElementById("btnEntrar");
+
+// // botaoEntrar.addEventListener("evento" , função de callback anônima );
+// botaoEntrar.addEventListener("click" , ()=>{} );
+
+// const pessoa = {
+//     nome : "nome",
+//     idade : 33,
+//     correr : ()=>{
+
+//     }
+// }
+
+// function soma2 (){
+//     return a+b;
+// }
+
+// const soma = () => {
+//     return a+b;
+// }
+
+const botaoEntrar = document.getElementById("btnEntrar");
+
+// botaoEntrar.addEventListener("evento" , função de callback anônima );
+botaoEntrar.addEventListener("click" , ()=>{
+    console.log("CLIQUEI NO BOTÃO");
+} );

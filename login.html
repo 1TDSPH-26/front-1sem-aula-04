@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESPORTE TOTAl - LOGIN </title>
+    <title>ESPORTE TOTAL - LOGIN</title>
     <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="./js/script.js"></script>
+
+
   </head>
   <body>
     <header class="cabecalho">
@@ -17,17 +21,6 @@
               >Home</a
             >
           </li>
-          <li class="cabecalho__list-item">
-            <a class="cabecalho__link" href="./paginas/basquete.html"
-              >Basquete</a
-            >
-          </li>
-          <li class="cabecalho__list-item">
-            <a class="cabecalho__link" href="./paginas/futebol.html">Futebol</a>
-          </li>
-          <li class="cabecalho__list-item">
-            <a class="cabecalho__link" href="./paginas/volei.html">Volei</a>
-          </li>
         </ul>
       </nav>
     </header>
@@ -36,32 +29,56 @@
       <section class="hero">
         <div class="hero__container">
           <h1 class="hero__title">CONTROLE DE ACESSO</h1>
-        <form action="#"method="GET">
-          <fieldset>
-            <legend>Login</legend>
-            <div>
-              <label for="">Email</label>
-              <input type="email" name="email" id="idEmail" placeholder="Digite seu email" minlength="13" maxlength="150" required oninvalid="setCustomValidity('Verifique seus dados')">
-            </div>
-             <div>
-              <label for="">Senha</label>
-              <input type="password" name="senha" id="idSenha" placeholder="Digite sua senha" minlength="5" maxlength="30" required oninvalid="setCustomValidity('Verifique seus dados')">
-            </div>
-            <div>
-             <input type="submit">
-            </div>
-          </fieldset>
-        </form>
 
-          <span>Não tem uma conta?</span><a aria-label="Para se cadastrar no sistema" class="hero__btn" href="./pagina1.html">clique aqui</a>
+          <form action="#" method="GET">
+            <fieldset>
+              <legend>Login</legend>
+              <div>
+                <label for="idEmail">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="idEmail"
+                  placeholder="Digite seu email"
+                  minlength="13"
+                  maxlength="150"
+                  required
+                />
+              </div>
+              <div>
+                <label for="idSenha">Senha</label>
+                <input
+                  type="password"
+                  name="senha"
+                  id="idSenha"
+                  placeholder="Digite sua senha"
+                  minlength="5"
+                  maxlength="30"
+                  required
+                />
+              </div>
+              <div>
+<button type="submit" id="btnEntrar">Entrar</button>
+            </div>
+            </fieldset>
+          </form>
+
+          <span>Não tem uma conta?</span
+          ><a
+            aria-label="Para criar uma conta"
+            class="hero__btn"
+            href="./cadastro.html"
+            >clique aqui</a
+          >
         </div>
       </section>
     </main>
 
     <footer>
-      <p class="unico">
-        Alexandre C. de Jesus &copy; - Todos os direitos reservados
-      </p>
+      <p class="unico">ESPORTE TOTAL &copy; - Todos os direitos reservados</p>
     </footer>
+
+
+
   </body>
 </html>
